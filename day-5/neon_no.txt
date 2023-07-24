@@ -1,0 +1,25 @@
+//program for checking neon
+import java.io.*;
+import java.util.*;
+public class neonno
+{
+    public static void main(String args[])
+    {
+       int sq=0,sum=0,mod;
+       System.out.print("Enter the number for checking:");
+       Scanner o=new Scanner(System.in);
+       int n=o.nextInt();
+       sq=n*n;
+       while(sq>0)
+       {
+           mod=sq%10;
+           sum=sum+mod;
+           sq=sq/10;
+       }
+       if(sum==n)
+           System.out.println(n+" is neon number");
+        else
+           System.out.println(n+" is not neon number");
+    }
+}
+

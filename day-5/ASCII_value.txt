@@ -1,0 +1,17 @@
+//program to print the ASCII value of a character
+import java.io.*;
+import java.util.*;
+public class ascvalue
+{
+   public static void main(String args[])
+   {
+     char t='5';
+     char s=48;
+     System.out.println(t-s);
+   }
+}
+
+
+
+
+

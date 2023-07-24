@@ -1,0 +1,21 @@
+//program to check odd or even
+import java.io.*;
+import java.util.*;
+public class odd_eve
+{
+    public static void main(String args[])
+    {
+       int n;
+       System.out.println("Enter the number to check:");
+       Scanner o=new Scanner(System.in);
+       n=o.nextInt();
+       if(n%2==0)
+       {
+           System.out.println("The given number is even");
+       }
+       else
+       {
+           System.out.println("The given number is odd");
+       }
+    }
+}

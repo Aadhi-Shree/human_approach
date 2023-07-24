@@ -1,0 +1,35 @@
+//program for finding whose index of the first occurance is the smallest
+import java.io.*;
+import java.util.*;
+public class first_occurance
+{
+    public static void main(String args[])
+    {
+       int a[]=new int[10];
+       int temp=0;
+       Scanner s=new Scanner(System.in);
+       System.out.print("Enter the no of elements:");
+       int n=s.nextInt();
+       for(int i=0;i<n;i++)
+       {
+           a[i]=s.nextInt();
+       }
+       for(int i=0;i<n;i++)
+       {
+           for(int j=i+1;j<n;j++)
+           {
+               if(a[i]==a[j])
+               {
+                 System.out.println("The first repeating element is "+a[i]);
+                 temp++;
+                 i=n;j=n;
+               }
+           }
+       }
+       if(temp==0)
+       {
+           System.out.println("NO repeating element is found");
+       }
+    }
+}
+
